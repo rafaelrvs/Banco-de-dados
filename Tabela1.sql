@@ -77,9 +77,9 @@ insert into acidente
  values (500,'2023-12-25','10:02:00','Rua Amarela'); 
 
 
-insert into apolice_acidente values (1,1000); 
+insert into apolice_acidente values (1,100); 
 insert into apolice_acidente values (5,100); 
 insert into apolice_acidente values (2,500); 
-insert into apolice_acidente values (3,300); 
+insert into apolice_acidente values (3,200); 
 insert into apolice_acidente values (4,200); 
 insert into apolice_acidente values (5,400); 
