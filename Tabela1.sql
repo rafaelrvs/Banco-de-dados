@@ -67,7 +67,7 @@ insert into apolice
 insert into apolice 
  values (2,2500.00,'2023-04-10','2024-04-09',2,20); 
 insert into apolice 
- values (3,8750.00,'2023-02-21','2024-02-20',2,30); 
+ values (8,8750.00,'2023-04-8','2024-02-20',2,30); 
 insert into apolice 
  values (4,15789.00,'2023-03-18','2024-03-17',4,10); 
 insert into apolice 
@@ -110,16 +110,20 @@ order by carro.marca;
 -- 3. Escreva o comando SQl que exiba o número de cada apólice juntamente com o nome 
 -- do cliente que a possui e o valor da mesa. Apresentar as apólices mais caras primeiro.
 
- 	select acidente.local, acidente.data 
-	from acidente
-	where acidente.data between'2023-10-01' and '2023-10-31'
+ 	select apolice.numero, cliente.nome, apolice.valor
+	from apolice, cliente
+	where apolice.numero = cliente.numero
+	order by apolice.valor desc
 
 
-
-
-
-
-
+--4. Escreva o comando SQL que exiba o número de cada apólice, o nome do cliente e a  
+-- marca do veículo segurado, das apólices com início no mês de abril de 2023. O resultado deve 
+-- estar ordenado em ordem crescente pelo nome do cliente.
+ 
+select apolice.numero, carro.marca, apolice.data_inicio
+from apolice, cliente, carro
+where carro.registro = cliente.numero  and cliente.numero = apolice.numero and  apolice.data_inicio 
+between '2023-04-01' and '2023-04-30'
 
 
 
