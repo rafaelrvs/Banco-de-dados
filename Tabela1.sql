@@ -47,6 +47,33 @@ insert into cliente values (3,'Lucas','Rua C');
 insert into cliente values (4,'Vanessa','Rua D'); 
 insert into cliente values (5,'Aline','Rua E'); 
 
+insert into carro values (10,'Fiat','Uno','Vermelho'); 
+insert into carro values (20,'Fiat','Strada','Prata'); 
+insert into carro values (30,'Honda','Civic','Cinza'); 
+insert into carro values (40,'Honda','Fit','Branco'); 
+insert into carro values (50,'Hyundai','HB20','Grafite');
+
+
+insert into apolice 
+ values (1,5000.00,'2023-01-10','2024-01-09',1,50); 
+insert into apolice 
+ values (2,2500.00,'2023-04-10','2024-04-09',2,20); 
+insert into apolice 
+ values (3,8750.00,'2023-02-21','2024-02-20',2,30); 
+insert into apolice 
+ values (4,15789.00,'2023-03-18','2024-03-17',4,10); 
+insert into apolice 
+ values (5,4580.00,'2023-04-23','2024-04-22',3,50); 
+insert into acidente 
+ values (100,'2023-05-01','10:32:00','Rua Azul'); 
+insert into acidente 
+ values (200,'2023-04-20','08:30:00','Rua Branca'); 
+insert into acidente 
+ values (300,'2023-04-11','11:12:00','Rua Rosa'); 
+insert into acidente 
+ values (400,'2023-05-17','15:00:00','Rua Verde'); 
+insert into acidente 
+ values (500,'2023-04-25','10:02:00','Rua Amarela'); 
 
 
 
