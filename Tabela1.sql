@@ -27,7 +27,7 @@ create table apolice (
 
 create table acidente(
 	codigo integer,
-	data date not null check >=now()),
+	data date not null check (data >=now()),
 	hora time not null,
 	local varchar (200) not null,
 	constraint pk_acidente primary key (codigo)
@@ -35,7 +35,9 @@ create table acidente(
 create table apolice_acidente(
 	num_apolice integer, 
 	cod_acidente integer,
-	constraint pk_acidente primary key ()
+	constraint pk_ap_acidente primary key (num_apolice,cod_acidente),
+	constraint fk_ac_apolice foreign key(num_apolice) references apolice(numero),
+	constraint fk_aci_acidente foreign key(cod_acidente) references acidente(codigo)
 	
 );
 
