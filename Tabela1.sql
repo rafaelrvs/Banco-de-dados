@@ -25,3 +25,19 @@ create table apolice (
 	constraint fk_apolice_car foreign key (reg_carro)references carro(registro)
 );
 
+create table acidente(
+	codigo integer,
+	data date not null check >=now()),
+	hora time not null,
+	local varchar (200) not null,
+	constraint pk_acidente primary key (codigo)
+);
+create table apolice_acidente(
+	num_apolice integer, 
+	cod_acidente integer,
+	constraint pk_acidente primary key ()
+	
+);
+
+
+
