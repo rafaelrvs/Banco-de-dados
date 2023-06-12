@@ -32,7 +32,7 @@ create table acidente(
 	local varchar (200) not null,
 	constraint pk_acidente primary key (codigo)
 );
-create table apolice_acidente(
+	create table apolice_acidente(
 	num_apolice integer, 
 	cod_acidente integer,
 	constraint pk_ap_acidente primary key (num_apolice,cod_acidente),
@@ -40,6 +40,13 @@ create table apolice_acidente(
 	constraint fk_aci_acidente foreign key(cod_acidente) references acidente(codigo)
 	
 );
+
+insert into cliente values (1,'Maria','Rua A'); 
+insert into cliente values (2,'Ricardo','Rua B'); 
+insert into cliente values (3,'Lucas','Rua C'); 
+insert into cliente values (4,'Vanessa','Rua D'); 
+insert into cliente values (5,'Aline','Rua E'); 
+
 
 
 
