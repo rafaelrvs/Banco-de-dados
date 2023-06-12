@@ -32,7 +32,7 @@ create table acidente(
 	local varchar (200) not null,
 	constraint pk_acidente primary key (codigo)
 );
-	create table apolice_acidente(
+	create table apolice_acidente (
 	num_apolice integer, 
 	cod_acidente integer,
 	constraint pk_ap_acidente primary key (num_apolice,cod_acidente),
@@ -76,4 +76,9 @@ insert into acidente
  values (500,'2023-04-25','10:02:00','Rua Amarela'); 
 
 
-
+insert into apolice_acidente values (1,1000); 
+insert into apolice_acidente values (5,100); 
+insert into apolice_acidente values (2,500); 
+insert into apolice_acidente values (3,300); 
+insert into apolice_acidente values (4,200); 
+insert into apolice_acidente values (5,400); 
