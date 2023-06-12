@@ -19,7 +19,7 @@ CREATE TABLE log1(
  usuario text, 
  constraint pk_log1 primary key (id) 
 ); 
-
+uy6
 --Função de trigger a ser disparada sempre que um registro da tabela pessoa for atualizado
 CREATE OR REPLACE FUNCTION func_log_atualiza() 
 RETURNS trigger AS 
