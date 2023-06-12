@@ -47,7 +47,14 @@ insert into cliente values (2,'Ricardo','Rua B');
 insert into cliente values (3,'Lucas','Rua C'); 
 insert into cliente values (4,'Vanessa','Rua D'); 
 insert into cliente values (5,'Aline','Rua E'); 
+insert into cliente values (6,'Aline','Rua E'); 
+insert into cliente values (7,'Aline','Rua E');
+insert into cliente values (8,'Aline','Rua E'); 
+insert into cliente values (9,'Aline','Rua E'); 
+insert into cliente values (10,'Aline','Rua E'); 
+insert into cliente values (11,'Aline','Rua E'); 
 
+insert into carro values (70,'Honda','Civic','vermelho'); 
 insert into carro values (10,'Fiat','Uno','Vermelho'); 
 insert into carro values (20,'Fiat','Strada','Prata'); 
 insert into carro values (30,'Honda','Civic','Cinza'); 
@@ -68,13 +75,13 @@ insert into apolice
 insert into acidente 
  values (100,'2023-12-01','10:32:00','Rua Azul'); 
 insert into acidente 
- values (200,'2023-10-20','08:30:00','Rua Branca'); 
+ values (600,'2023-5-20','08:30:00','Rua Branca'); 
 insert into acidente 
  values (300,'2023-12-11','11:12:00','Rua Rosa'); 
 insert into acidente 
  values (400,'2023-11-17','15:00:00','Rua Verde'); 
 insert into acidente 
- values (500,'2023-12-25','10:02:00','Rua Amarela'); 
+ values (800,'2023-10-25','10:02:00','Rua Amarela'); 
 
 
 insert into apolice_acidente values (1,100); 
@@ -82,7 +89,7 @@ insert into apolice_acidente values (5,100);
 insert into apolice_acidente values (2,500); 
 insert into apolice_acidente values (3,200); 
 insert into apolice_acidente values (4,200); 
-insert into apolice_acidente values (5,400); 
+insert into apolice_acidente values (7,800); 
 
 -- 1. Escreva o comando SQL que exiba marca e modelo de todos os carros de cor 
 -- vermelho cadastrados. A lista deve estar ordenada em ordem alfabética pela marca e modelo. 
@@ -91,3 +98,45 @@ select carro.marca, carro.modelo, carro.cor
 from carro
 where carro.cor ilike 'vermelho'
 order by carro.marca;
+
+-- 2. Escreva o comando SQl que exiba o local de todos os acidentes ocorridos no mês de 
+-- maio de 2023.
+
+ 	select acidente.local, acidente.data 
+	from acidente
+	where acidente.data between'2023-10-01' and '2023-10-31'
+	
+	
+-- 3. Escreva o comando SQl que exiba o número de cada apólice juntamente com o nome 
+-- do cliente que a possui e o valor da mesa. Apresentar as apólices mais caras primeiro.
+
+ 	select acidente.local, acidente.data 
+	from acidente
+	where acidente.data between'2023-10-01' and '2023-10-31'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
