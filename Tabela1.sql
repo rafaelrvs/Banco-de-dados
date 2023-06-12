@@ -40,6 +40,7 @@ create table acidente(
 	constraint fk_aci_acidente foreign key(cod_acidente) references acidente(codigo)
 	
 );
+alter table apolice_Acidente alter column num_apolice type bigint
 
 insert into cliente values (1,'Maria','Rua A'); 
 insert into cliente values (2,'Ricardo','Rua B'); 
@@ -55,7 +56,7 @@ insert into carro values (50,'Hyundai','HB20','Grafite');
 
 
 insert into apolice 
- values (1,5000.00,'2023-01-10','2024-01-09',1,50); 
+ values (1,5000.00,'2023-05-10','2024-01-09',1,50); 
 insert into apolice 
  values (2,2500.00,'2023-04-10','2024-04-09',2,20); 
 insert into apolice 
@@ -65,15 +66,15 @@ insert into apolice
 insert into apolice 
  values (5,4580.00,'2023-04-23','2024-04-22',3,50); 
 insert into acidente 
- values (100,'2023-05-01','10:32:00','Rua Azul'); 
+ values (100,'2023-12-01','10:32:00','Rua Azul'); 
 insert into acidente 
- values (200,'2023-04-20','08:30:00','Rua Branca'); 
+ values (200,'2023-10-20','08:30:00','Rua Branca'); 
 insert into acidente 
- values (300,'2023-04-11','11:12:00','Rua Rosa'); 
+ values (300,'2023-12-11','11:12:00','Rua Rosa'); 
 insert into acidente 
- values (400,'2023-05-17','15:00:00','Rua Verde'); 
+ values (400,'2023-11-17','15:00:00','Rua Verde'); 
 insert into acidente 
- values (500,'2023-04-25','10:02:00','Rua Amarela'); 
+ values (500,'2023-12-25','10:02:00','Rua Amarela'); 
 
 
 insert into apolice_acidente values (1,1000); 
