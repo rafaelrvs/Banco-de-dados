@@ -83,3 +83,11 @@ insert into apolice_acidente values (2,500);
 insert into apolice_acidente values (3,200); 
 insert into apolice_acidente values (4,200); 
 insert into apolice_acidente values (5,400); 
+
+-- 1. Escreva o comando SQL que exiba marca e modelo de todos os carros de cor 
+-- vermelho cadastrados. A lista deve estar ordenada em ordem alfabética pela marca e modelo. 
+
+select carro.marca, carro.modelo, carro.cor
+from carro
+where carro.cor ilike 'vermelho'
+order by carro.marca;
